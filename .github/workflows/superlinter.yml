@@ -1,0 +1,12 @@
+name: Eslint-chek
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+jobs:
+  Eslint:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Eslint checking
+        run: make lint
