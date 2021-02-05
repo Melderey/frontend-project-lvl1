@@ -6,16 +6,13 @@ on: push
 jobs:
   Eslint:
     runs-on: ubuntu-latest
+
+    strategy:
+      # Node versions list
+      matrix:
+        node-version: [14.x]
  
     steps:
-      - name: npm install
-        # Install project
-        run: |
-          npm install
-        # Add environment variables
-        env:
-          CI: true
       - name: Run linter
         # Run Linter
-        run: |
-          npx eslint 
+        run: make lint 
