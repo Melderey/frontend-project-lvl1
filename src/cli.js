@@ -1,10 +1,7 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import readlineSync from 'readline-sync';
+import name from './name.js';
 
-const giveName = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
+const greeting = () => {
   console.log(`Hello, ${name}`);
 };
 
-export default giveName;
+export default greeting;
