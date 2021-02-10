@@ -1,16 +1,15 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import readlineSync from 'readline-sync';
+import getRandomNum from './getRandomNum.js';
+import name from './name.js';
 
 const maxNum = 100;
-const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
 
-const isEven = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
+const isEven = (numOfRaunds = 3) => {
   console.log(`Hello, ${name}`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numOfRaunds; i += 1) {
     const randomNum = getRandomNum(maxNum);
     console.log(`Question: ${randomNum}`);
     const answer = readlineSync.question('Your answer: ');
