@@ -7,8 +7,8 @@ import isAnswer from './isAnswer.js';
 const maxNum = 100;
 
 const isEven = (numOfRaunds = 3) => {
-  console.log(`Hello, ${name}`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(`Hello, ${name}
+Answer "yes" if the number is even, otherwise answer "no".`);
 
   for (let i = 0; i < numOfRaunds; i += 1) {
     const randomNum = getRandomNum(maxNum);
