@@ -9,7 +9,7 @@ const maxNum = 100;
 const signInExpression = '+-*';
 
 const calculate = (numOfRaunds = 3) => {
-  console.log(`Hello, ${name}
+  console.log(`Hello, ${name}!
 What is the result of the expression?.`);
 
   for (let i = 0; i < numOfRaunds; i += 1) {
