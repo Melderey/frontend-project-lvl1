@@ -4,22 +4,20 @@ import readlineSync from 'readline-sync';
 import getRandomNum from './getRandomNum.js';
 import name from './name.js';
 import isAnswer from './isAnswer.js';
+import gsd from './gsd.js';
 
 const maxNum = 100;
-const signInExpression = '+-*';
 
-const calculate = (numOfRaunds = 3) => {
+const isGsd = (numOfRaunds = 3) => {
   console.log(`Hello, ${name}!
-What is the result of the expression?`);
+Find the greatest common divisor of given numbers.`);
 
   for (let i = 0; i < numOfRaunds; i += 1) {
     const randomNum1 = getRandomNum(maxNum);
     const randomNum2 = getRandomNum(maxNum);
-    const randomSign = getRandomNum(signInExpression.length);
-    // eslint-disable-next-line no-useless-concat
-    const correctAnswer = Function('return ' + `${randomNum1}${signInExpression[randomSign]}${randomNum2}`)();
+    const correctAnswer = gsd(randomNum1, randomNum2);
 
-    console.log(`Question: ${randomNum1} ${signInExpression[randomSign]} ${randomNum2}`);
+    console.log(`Question: ${randomNum1} ${randomNum2}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (Number(answer) !== correctAnswer) {
@@ -32,4 +30,4 @@ What is the result of the expression?`);
   console.log(`Congratulations, ${name}`);
 };
 
-export default calculate;
+export default isGsd;
