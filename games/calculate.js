@@ -1,9 +1,9 @@
 /* eslint-disable no-new-func */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import readlineSync from 'readline-sync';
-import getRandomNum from './getRandomNum.js';
-import name from './name.js';
-import isAnswer from './isAnswer.js';
+import getRandomNum from '../src/getRandomNum.js';
+import name from '../src/name.js';
+import isAnswer from '../src/isAnswer.js';
 
 const maxNum = 100;
 const signInExpression = '+-*';
@@ -17,7 +17,7 @@ What is the result of the expression?`);
     const randomNum2 = getRandomNum(maxNum);
     const randomSign = getRandomNum(signInExpression.length);
     // eslint-disable-next-line no-useless-concat
-    const correctAnswer = Function('return ' + `${randomNum1}${signInExpression[randomSign]}${randomNum2}`)();
+    const correctAnswer = Function('return ' + `${randomNum1}${signInExpression[randomSign]}${randomNum2}`)(); // string conversion to math expression
 
     console.log(`Question: ${randomNum1} ${signInExpression[randomSign]} ${randomNum2}`);
     const answer = readlineSync.question('Your answer: ');

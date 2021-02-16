@@ -1,4 +1,4 @@
-import name from './name.js';
+import name from '../src/name.js';
 
 const greeting = () => {
   console.log(`Hello, ${name}!`);

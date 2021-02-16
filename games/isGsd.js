@@ -1,10 +1,10 @@
 /* eslint-disable no-new-func */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import readlineSync from 'readline-sync';
-import getRandomNum from './getRandomNum.js';
-import name from './name.js';
-import isAnswer from './isAnswer.js';
-import gsd from './gsd.js';
+import getRandomNum from '../src/getRandomNum.js';
+import name from '../src/name.js';
+import isAnswer from '../src/isAnswer.js';
+import gsd from '../src/gsd.js';
 
 const maxNum = 100;
 
