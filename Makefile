@@ -1,7 +1,16 @@
 install:
 	npm install
 
-brain-games:
+publish:
+	npm publish --dry-run	
+
+lint:
+	npx eslint .
+
+fix:
+	npx eslint --fix .
+
+	brain-games:
 	node bin/brain-games.js
 
 brain-even:
@@ -13,11 +22,5 @@ brain-calc:
 brain-gsd:
 	node bin/brain-gsd.js
 
-publish:
-	npm publish --dry-run	
-
-lint:
-	npx eslint .
-
-fix:
-	npx eslint --fix .
+brain-progression:
+	node bin/brain-progression.js
