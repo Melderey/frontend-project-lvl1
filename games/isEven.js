@@ -30,7 +30,7 @@ Answer "yes" if the number is even, otherwise answer "no".`);
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default isEven;

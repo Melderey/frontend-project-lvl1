@@ -33,7 +33,7 @@ What number is missing in the progression?`);
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default progression;

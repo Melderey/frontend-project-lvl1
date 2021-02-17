@@ -27,7 +27,7 @@ Find the greatest common divisor of given numbers.`);
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default isGsd;

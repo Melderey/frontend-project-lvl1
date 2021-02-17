@@ -29,7 +29,7 @@ What is the result of the expression?`);
     console.log('Correct!');
   }
 
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default calculate;
