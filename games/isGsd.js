@@ -17,6 +17,8 @@ Find the greatest common divisor of given numbers.`);
     const randomNum2 = getRandomNum(maxNum);
     const correctAnswer = gsd(randomNum1, randomNum2);
 
+    console.log(correctAnswer);
+
     console.log(`Question: ${randomNum1} ${randomNum2}`);
     const answer = readlineSync.question('Your answer: ');
 
