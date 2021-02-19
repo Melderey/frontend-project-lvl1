@@ -6,19 +6,15 @@ import name from '../src/name.js';
 import isAnswer from '../src/isAnswer.js';
 import getProgressionArr from '../src/getProgressionArr.js';
 
-const maxLengthProgression = 9;
-const minLengthProgression = 5;
-
 const progression = (numOfRaunds = 3) => {
   console.log(`Hello, ${name}!
 What number is missing in the progression?`);
 
   for (let i = 0; i < numOfRaunds; i += 1) {
-    const randomQuestionPosition = getRandomNum(
-      maxLengthProgression,
-      minLengthProgression,
-    );
     const resultArr = getProgressionArr();
+    const maxLengthProgression = resultArr.length;
+
+    const randomQuestionPosition = getRandomNum(maxLengthProgression);
     const correctAnswer = resultArr[randomQuestionPosition];
     resultArr[randomQuestionPosition] = '..';
     const getProgressionStr = resultArr.join(' ');
