@@ -8,7 +8,7 @@ import gsd from '../src/gsd.js';
 
 const maxNum = 100;
 
-const isGsd = (numOfRaunds = 3) => {
+const isGcd = (numOfRaunds = 3) => {
   console.log(`Hello, ${name}!
 Find the greatest common divisor of given numbers.`);
 
@@ -32,4 +32,4 @@ Find the greatest common divisor of given numbers.`);
   console.log(`Congratulations, ${name}!`);
 };
 
-export default isGsd;
+export default isGcd;
