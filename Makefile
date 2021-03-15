@@ -10,7 +10,7 @@ lint:
 fix:
 	npx eslint --fix .
 
-	brain-games:
+brain-games:
 	node bin/brain-games.js
 
 brain-even:
