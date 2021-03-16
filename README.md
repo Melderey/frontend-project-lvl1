@@ -9,8 +9,8 @@ It's my first project - "Brain games". In work I used:
 
 - A base javascript;
 - Virtual machine (VirtualBox, Vagrant) and console emulator on Windows;
-- Node.js;
-- Git and github actions;
+- Node.js, npm;
+- Git, Github and github actions;
 - CodeClimate;
 - Eslint;
 - Visual Studio Code.
